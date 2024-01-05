@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+body {
+  font-family: Inter, sans-serif;
+  height: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+canvas {
+  z-index: -1;
+  position: absolute;
+}
+
+.card {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background: radial-gradient(circle at left top, rgba(12,3,38,0.6) 0, rgba(0,0,0,0.6) 100%);
+  border: 1px solid #141e2e;
+  padding: 50px 40px;
+  border-radius: 18px;
+  width: 400px !important;
+  height: 475px;
+  line-height: 30px;
+  color: #cfcfcf;
+  box-shadow: rgba(24,10,67,0.5) 0px 0px 50px;
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  font-size: 21px;
+  text-shadow: #ffffff 0px 0px 30px;
+}
+
+.confetti {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 9px 16px;
+  transition: 0.3s;
+  position: absolute;
+  bottom: 1%;
+  right: 0.5%;
+  background-color: rgba(11,17,33,0.6);
+  border: 1px solid #293445;
+  border-radius: 10px;
+}
+
+.confetti:hover {
+  border-color: #5239CC;
+}
+
+::selection {
+  background-color: rgba(99, 102, 241, 0.1);
+}
