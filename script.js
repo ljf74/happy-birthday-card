@@ -97,7 +97,7 @@ var run = true;
 const audio = new Audio();
 
 function playSound() {
-  audio.src = 'https://github.com/ljf74/db/raw/main/audio/梦寐以求.mp3';
+  audio.src = 'https://flacdb.netlify.app/audio/baby_i_need_you_sped.flac';
   audio.play();
 }
 
